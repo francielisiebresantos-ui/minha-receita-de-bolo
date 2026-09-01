@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Receita deliciosa de bolo de cenoura com cobertura de chocolate."
+    />
+    <title>Receita de Bolo de Cenoura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">🥕</span>
+          <span>Receita de Bolo</span>
+        </div>
+        <nav class="menu" aria-label="Menu principal">
+          <a href="#ingredientes">Ingredientes</a>
+          <a href="#preparo">Preparo</a>
+          <a href="#dicas">Dicas</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">Clássico e irresistível</p>
+            <h1>Bolo de Cenoura</h1>
+            <p class="subtitle">
+              Um bolo fofinho, úmido e com o sabor maravilhoso da cenoura. Perfeito para
+              qualquer ocasião, desde o café da manhã até a sobremesa da família.
+            </p>
+
+            <div class="hero-meta">
+              <div>
+                <span>Tempo</span>
+                <strong>50 min</strong>
+              </div>
+              <div>
+                <span>Rendimento</span>
+                <strong>8 fatias</strong>
+              </div>
+              <div>
+                <span>Dificuldade</span>
+                <strong>Fácil</strong>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#ingredientes" class="btn btn-primary">Ver ingredientes</a>
+              <button type="button" class="btn btn-secondary" id="btnScrollPrepare">
+                Ver modo de preparo
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Foto de um bolo de cenoura">
+            <div class="cake-card">
+              <div class="cake-top"></div>
+              <div class="cake-layer layer-1"></div>
+              <div class="cake-layer layer-2"></div>
+              <div class="cake-layer layer-3"></div>
+              <div class="cake-plate"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container recipe-grid">
+        <article class="panel" id="ingredientes">
+          <div class="panel-header">
+            <h2>Ingredientes</h2>
+            <div class="servings-control" aria-label="Seleção de porções">
+              <button class="portion-btn active" type="button" data-servings="8">8 fatias</button>
+              <button class="portion-btn" type="button" data-servings="12">12 fatias</button>
+            </div>
+          </div>
+
+          <ul class="ingredients-list" id="ingredientsList"></ul>
+        </article>
+
+        <aside class="panel info-panel">
+          <h2>Você vai precisar</h2>
+          <ul class="mini-list">
+            <li>Forma redonda de 22 cm</li>
+            <li>Liquidificador ou processador</li>
+            <li>Espátula</li>
+            <li>Papel manteiga ou margarina</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="container steps-section" id="preparo">
+        <div class="section-heading">
+          <p class="eyebrow">Passo a passo</p>
+          <h2>Modo de preparo</h2>
+        </div>
+
+        <div class="steps-list">
+          <article class="step">
+            <span class="step-number">1</span>
+            <div>
+              <h3>Prepare a massa</h3>
+              <p>
+                Bata as cenouras, os ovos e o óleo no liquidificador até obter uma mistura bem
+                homogênea.
+              </p>
+            </div>
+          </article>
+
+          <article class="step">
+            <span class="step-number">2</span>
+            <div>
+              <h3>Acrescente os secos</h3>
+              <p>
+                Em uma tigela, misture o açúcar, a farinha e o fermento. Junte a mistura do
+                liquidificador e mexa delicadamente.
+              </p>
+            </div>
+          </article>
+
+          <article class="step">
+            <span class="step-number">3</span>
+            <div>
+              <h3>Asse</h3>
+              <p>
+                Despeje a massa em uma forma untada e enfarinhada e leve ao forno pré-aquecido a 180°C
+                por cerca de 40 minutos.
+              </p>
+            </div>
+          </article>
+
+          <article class="step">
+            <span class="step-number">4</span>
+            <div>
+              <h3>Faça a cobertura</h3>
+              <p>
+                Em uma panela, aqueça o chocolate em pó, o leite e a manteiga até formar uma cobertura
+                cremosa e brilhante.
+              </p>
+            </div>
+          </article>
+
+          <article class="step">
+            <span class="step-number">5</span>
+            <div>
+              <h3>Finalize</h3>
+              <p>
+                Espalhe a cobertura sobre o bolo ainda morno e deixe esfriar antes de cortar em fatias.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container tips" id="dicas">
+        <div class="section-heading">
+          <p class="eyebrow">Dicas especiais</p>
+          <h2>Para deixar ainda melhor</h2>
+        </div>
+
+        <div class="tips-grid">
+          <div class="tip-card">
+            <span>💡</span>
+            <h3>Fique de olho no forno</h3>
+            <p>O ponto do bolo é quando ele dourar e um palito sair quase limpo.</p>
+          </div>
+
+          <div class="tip-card">
+            <span>🥰</span>
+            <h3>Molho extra</h3>
+            <p>Se quiser, adicione um pouco de leite condensado na cobertura para deixá-la mais cremosa.</p>
+          </div>
+
+          <div class="tip-card">
+            <span>🍫</span>
+            <h3>Versão irresistível</h3>
+            <p>Finalize com raspas de chocolate ou granulado para um visual mais sofisticado.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Feito com amor para uma receita de bolo de cenoura perfeita.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

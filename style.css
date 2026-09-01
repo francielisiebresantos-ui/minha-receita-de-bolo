@@ -1,0 +1,477 @@
+:root {
+  --bg: #fff8ef;
+  --bg-soft: #fff1d8;
+  --card: #fffefb;
+  --primary: #d9772e;
+  --primary-dark: #b55e1b;
+  --secondary: #f6c76b;
+  --text: #2d1f1a;
+  --muted: #6d5348;
+  --line: #f2d6b4;
+  --shadow: rgba(136, 73, 20, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(180deg, #fff8ef 0%, #fffaf4 100%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 248, 239, 0.8);
+  border-bottom: 1px solid rgba(217, 119, 46, 0.12);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--secondary), #ffd89a);
+  box-shadow: 0 10px 20px rgba(217, 119, 46, 0.15);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.menu a {
+  transition: color 0.2s ease;
+}
+
+.menu a:hover {
+  color: var(--primary-dark);
+}
+
+.hero {
+  padding: 4rem 0 3rem;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(217, 119, 46, 0.12);
+  color: var(--primary-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-text h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  max-width: 600px;
+  font-size: 1.08rem;
+  color: var(--muted);
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.8rem 0;
+}
+
+.hero-meta div {
+  min-width: 120px;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 12px 24px var(--shadow);
+}
+
+.hero-meta span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin-bottom: 0.2rem;
+}
+
+.hero-meta strong {
+  font-size: 1rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), #ea9a46);
+  color: white;
+  box-shadow: 0 16px 28px rgba(217, 119, 46, 0.26);
+}
+
+.btn-secondary {
+  background: rgba(217, 119, 46, 0.08);
+  color: var(--primary-dark);
+  border: 1px solid rgba(217, 119, 46, 0.15);
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.cake-card {
+  position: relative;
+  width: min(100%, 430px);
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+}
+
+.cake-top {
+  position: absolute;
+  top: 64px;
+  width: 220px;
+  height: 50px;
+  border-radius: 50% 50% 45% 45%;
+  background: linear-gradient(180deg, #f7d38f, #edb75e);
+  box-shadow: 0 18px 30px rgba(233, 152, 62, 0.26);
+}
+
+.cake-layer {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: inset 0 -10px 18px rgba(233, 126, 44, 0.18);
+}
+
+.layer-1 {
+  top: 97px;
+  width: 280px;
+  height: 90px;
+  background: linear-gradient(180deg, #f7c967, #edb556);
+}
+
+.layer-2 {
+  top: 155px;
+  width: 310px;
+  height: 95px;
+  background: linear-gradient(180deg, #efb85a, #e5a348);
+}
+
+.layer-3 {
+  top: 225px;
+  width: 350px;
+  height: 110px;
+  background: linear-gradient(180deg, #e59f46, #d87a30);
+}
+
+.cake-plate {
+  position: absolute;
+  bottom: 30px;
+  width: 390px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #edd7b6, #d8b07a);
+  box-shadow: 0 16px 30px rgba(114, 73, 38, 0.2);
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(217, 119, 46, 0.12);
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 18px 28px var(--shadow);
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.panel-header h2,
+.section-heading h2 {
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
+}
+
+.servings-control {
+  display: inline-flex;
+  padding: 0.35rem;
+  border-radius: 999px;
+  background: #fff2db;
+  border: 1px solid rgba(217, 119, 46, 0.08);
+}
+
+.portion-btn {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 700;
+}
+
+.portion-btn.active {
+  background: white;
+  color: var(--primary-dark);
+  box-shadow: 0 4px 12px rgba(217, 119, 46, 0.12);
+}
+
+.ingredients-list {
+  list-style: none;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.ingredients-list li {
+  position: relative;
+  padding: 0.8rem 1rem 0.8rem 2.8rem;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #fffaf2, #fff3df);
+  border: 1px solid rgba(217, 119, 46, 0.08);
+  color: var(--text);
+  font-weight: 500;
+}
+
+.ingredients-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 1rem;
+  top: 0.72rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: rgba(217, 119, 46, 0.12);
+  color: var(--primary-dark);
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.info-panel h2 {
+  margin-bottom: 1rem;
+}
+
+.mini-list {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+  color: var(--muted);
+}
+
+.mini-list li {
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.mini-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.steps-section,
+.tips {
+  padding-top: 4rem;
+}
+
+.section-heading {
+  margin-bottom: 1.5rem;
+}
+
+.steps-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1.25rem 1.4rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(217, 119, 46, 0.12);
+  box-shadow: 0 14px 26px var(--shadow);
+}
+
+.step-number {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), #f3b868);
+  color: white;
+  font-weight: 800;
+}
+
+.step h3,
+.tip-card h3 {
+  margin-bottom: 0.4rem;
+}
+
+.step p,
+.tip-card p {
+  color: var(--muted);
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.tip-card {
+  padding: 1.4rem;
+  border: 1px solid rgba(217, 119, 46, 0.12);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 18px 28px var(--shadow);
+}
+
+.tip-card span {
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.site-footer {
+  margin-top: 4rem;
+  padding: 1.6rem 0 2.5rem;
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid rgba(217, 119, 46, 0.12);
+}
+
+@media (max-width: 860px) {
+  .hero-content,
+  .recipe-grid,
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 2.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .nav {
+    justify-content: center;
+  }
+
+  .brand {
+    font-size: 0.92rem;
+  }
+
+  .panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
